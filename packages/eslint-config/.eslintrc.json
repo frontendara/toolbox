@@ -1,0 +1,24 @@
+{
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectSpread": true
+    }
+  },
+  "ignorePatterns": ["bin/"],
+
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["meteor", "@typescript-eslint", "no-only-tests"],
+  "extends": [
+    "plugin:meteor/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "plugin:react-hooks/recommended"
+  ],
+  "rules": {
+    "no-only-tests/no-only-tests": "error",
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "@typescript-eslint/explicit-module-boundary-types": 0
+  }
+}
