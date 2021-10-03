@@ -27,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/frontendara/packages/issues"
   },
-  "homepage": "https://github.com/frontendara/packages#readme"
+  "homepage": "https://github.com/frontendara/toolbox/packages/eslint-config#readme",
+  "publishConfig": {
+    "@chmelevskij:registry": "https://npm.pkg.github.com"
+  }
 }
