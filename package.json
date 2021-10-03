@@ -1,5 +1,5 @@
 {
-  "name": "@frontendara/packages",
+  "name": "@frontendara/toolbox",
   "version": "1.0.0",
   "private": true,
   "description": "Frontendara re-usable code",
@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/frontendara/packages/issues"
   },
-  "homepage": "https://github.com/frontendara/packages#readme"
+  "homepage": "https://github.com/frontendara/toolbox#readme",
+  "keywords": [
+    "eslint",
+    "eslint-plugin",
+    "eslintplugin"
+  ]
 }
