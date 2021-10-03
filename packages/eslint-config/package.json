@@ -29,6 +29,6 @@
   },
   "homepage": "https://github.com/frontendara/toolbox/packages/eslint-config#readme",
   "publishConfig": {
-    "@chmelevskij:registry": "https://npm.pkg.github.com"
+    "@frontendara:registry": "https://npm.pkg.github.com"
   }
 }
