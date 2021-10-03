@@ -20,12 +20,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/frontendara/packages.git"
+    "url": "git@github.com:frontendara/toolbox.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/frontendara/packages/issues"
+    "url": "https://github.com/frontendara/toolbox/issues"
   },
   "homepage": "https://github.com/frontendara/toolbox/packages/eslint-config#readme",
   "publishConfig": {
