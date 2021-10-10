@@ -7,7 +7,6 @@ config();
 const octokit = new Octokit({ auth: process.env.RELEASE });
 
 const rc = "-rc.";
-console.log(process.env.RELEASE)
 
 async function main() {
   try {
