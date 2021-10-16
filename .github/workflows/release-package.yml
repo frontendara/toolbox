@@ -26,6 +26,6 @@ jobs:
         run: pnpm install --frozen-lockfile
       - run: |
           echo $NPM_CONFIG_USERCONFIG
-          pnpm --globalconfig=$RUNNER_TEMP/.npmrc publish --access public --tag=next --filter="@frontendara/*"
+          pnpm publish --access public --tag=next --filter="@frontendara/*"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
