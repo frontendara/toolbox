@@ -1,6 +1,6 @@
 {
   "name": "@frontendara/toolbox",
-  "version": "1.0.0",
+  "version": "1.0.1-0",
   "private": true,
   "description": "Frontendara re-usable code",
   "main": "index.js",
