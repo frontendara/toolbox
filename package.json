@@ -22,9 +22,6 @@
     "eslint-plugin",
     "eslintplugin"
   ],
-  "publishConfig": {
-    "@frontendara:registry": "https://npm.pkg.github.com"
-  },
   "dependencies": {
     "dotenv": "^10.0.0",
     "octokit": "^1.7.0"
