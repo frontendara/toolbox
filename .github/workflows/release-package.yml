@@ -25,7 +25,8 @@ jobs:
       - name: pnpm Build
         run: pnpm install --frozen-lockfile
       - run: |
-          cat .npmrc
+          ls
+          pwd
           pnpm publish --access public --tag=next --filter="@frontendara/*"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
