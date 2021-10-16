@@ -1,6 +1,6 @@
 {
   "name": "@frontendara/eslint",
-  "version": "0.0.1-7",
+  "version": "0.0.1-8",
   "private": false,
   "description": "Frontendara eslint",
   "main": "index.js",
