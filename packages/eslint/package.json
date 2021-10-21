@@ -1,5 +1,5 @@
 {
-  "name": "@frontendara/eslint",
+  "name": "@frontendara/eslint-config",
   "version": "0.0.1-8",
   "private": false,
   "description": "Frontendara eslint",
