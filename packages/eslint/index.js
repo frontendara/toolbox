@@ -15,6 +15,9 @@ module.exports = {
         moduleDirectory: ["node_modules", "imports"],
       },
     },
+    react: {
+      version: "detect",
+    },
   },
   parser: "@typescript-eslint/parser",
   plugins: [
@@ -31,7 +34,7 @@ module.exports = {
     "plugin:import/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:react/recommended",
-    "plugin:react-hooks/recommended"
+    "plugin:react-hooks/recommended",
   ],
   rules: {
     "no-only-tests/no-only-tests": "error",
