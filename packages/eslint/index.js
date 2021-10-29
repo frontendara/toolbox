@@ -49,5 +49,6 @@ module.exports = {
     "react/display-name": "off",
     // TODO: rethink if we need to enable this
     "react/react-in-jsx-scope": "off",
+    "no-return-await": "error",
   },
 };
