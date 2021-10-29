@@ -50,6 +50,6 @@ module.exports = {
     // TODO: rethink if we need to enable this
     "react/react-in-jsx-scope": "off",
     "no-return-await": "error",
-    "arrow-parens": "always"
+    "arrow-parens": ["error", "always"],
   },
 };
