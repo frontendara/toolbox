@@ -1,3 +1,4 @@
+// TODO: think about splitting this up for meteor and non meteor projects
 module.exports = {
   parserOptions: {
     sourceType: "module",
@@ -51,5 +52,29 @@ module.exports = {
     "react/react-in-jsx-scope": "off",
     "no-return-await": "error",
     "arrow-parens": ["error", "always"],
+    "import/order": [
+      "error",
+      {
+        groups: [
+          "builtin",
+          "internal",
+          "external",
+          "parent",
+          "sibling",
+          "index",
+        ],
+        pathGroups: [
+          {
+            pattern: "^meteor/**",
+            group: "internal",
+          },
+        ],
+        "newlines-between": "always",
+        alphabetize: {
+          order: "asc",
+          caseInsensitive: true,
+        },
+      },
+    ],
   },
 };
