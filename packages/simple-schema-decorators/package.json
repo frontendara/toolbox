@@ -1,11 +1,13 @@
 {
   "name": "@frontendara/simple-schema-decorators",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "private": false,
+  "type": "module",
   "description": "Decorators to use with simple schema",
-  "main": "index.js",
+  "main": "bin/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc"
   },
   "dependencies": {
     "reflect-metadata": "0.1.13",

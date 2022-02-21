@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
     "baseUrl": "./",
-    "outDir": "bin",
+    "outDir": "dist",
     "target": "ES2020",
-    "module": "commonjs",
+    "module": "ES2015",
     "moduleResolution": "node",
     "sourceMap": true,
     "pretty": true,
@@ -17,7 +17,6 @@
     "skipLibCheck": true
   },
   "include": [
-    "index.ts",
-		"index.test.ts"
+    "index.ts"
   ]
 }
