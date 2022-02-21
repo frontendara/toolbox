@@ -1,0 +1,31 @@
+{
+  "name": "@frontendara/simple-schema-decorators",
+  "version": "0.0.0",
+  "private": false,
+  "description": "Decorators to use with simple schema",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "reflect-metadata": "0.1.13",
+    "simpl-schema": "1.12.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:frontendara/toolbox.git"
+  },
+  "author": "t.chmelevskij@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frontendara/toolbox/issues"
+  },
+  "homepage": "https://github.com/frontendara/toolbox/packages/simple-schema-decorators#readme",
+  "devDependencies": {
+    "@types/jest": "27.4.0",
+    "@types/simpl-schema": "1.12.0",
+    "jest": "27.5.1",
+    "ts-jest": "27.1.3",
+    "typescript": "4.5.5"
+  }
+}

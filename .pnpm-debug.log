@@ -1,6 +1,23 @@
 {
   "0 debug pnpm:scope": {
-    "selected": 2,
-    "total": 2
+    "selected": 1
+  },
+  "1 info pnpm": {
+    "err": {
+      "name": "Error",
+      "message": "not found: workspace",
+      "code": "ENOENT",
+      "stack": "Error: not found: workspace\n    at getNotFoundError (/home/tomche/.nvm/versions/node/v14.18.2/pnpm-global/5/node_modules/.pnpm/registry.npmjs.org+pnpm@6.31.0/node_modules/pnpm/dist/pnpm.cjs:41555:51)\n    at Function.whichSync [as sync] (/home/tomche/.nvm/versions/node/v14.18.2/pnpm-global/5/node_modules/.pnpm/registry.npmjs.org+pnpm@6.31.0/node_modules/pnpm/dist/pnpm.cjs:41632:13)\n    at getCommandAbsolutePathSync (/home/tomche/.nvm/versions/node/v14.18.2/pnpm-global/5/node_modules/.pnpm/registry.npmjs.org+pnpm@6.31.0/node_modules/pnpm/dist/pnpm.cjs:43197:44)\n    at default_1 (/home/tomche/.nvm/versions/node/v14.18.2/pnpm-global/5/node_modules/.pnpm/registry.npmjs.org+pnpm@6.31.0/node_modules/pnpm/dist/pnpm.cjs:43206:32)\n    at /home/tomche/.nvm/versions/node/v14.18.2/pnpm-global/5/node_modules/.pnpm/registry.npmjs.org+pnpm@6.31.0/node_modules/pnpm/dist/pnpm.cjs:178093:39"
+    }
+  },
+  "2 error pnpm": {
+    "code": "ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL",
+    "prefix": "/home/tomche/development/frontendara/toolbox",
+    "err": {
+      "name": "pnpm",
+      "message": "not found: workspace",
+      "code": "ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL",
+      "stack": "Error: not found: workspace\n    at getNotFoundError (/home/tomche/.nvm/versions/node/v14.18.2/pnpm-global/5/node_modules/.pnpm/registry.npmjs.org+pnpm@6.31.0/node_modules/pnpm/dist/pnpm.cjs:41555:51)\n    at Function.whichSync [as sync] (/home/tomche/.nvm/versions/node/v14.18.2/pnpm-global/5/node_modules/.pnpm/registry.npmjs.org+pnpm@6.31.0/node_modules/pnpm/dist/pnpm.cjs:41632:13)\n    at getCommandAbsolutePathSync (/home/tomche/.nvm/versions/node/v14.18.2/pnpm-global/5/node_modules/.pnpm/registry.npmjs.org+pnpm@6.31.0/node_modules/pnpm/dist/pnpm.cjs:43197:44)\n    at default_1 (/home/tomche/.nvm/versions/node/v14.18.2/pnpm-global/5/node_modules/.pnpm/registry.npmjs.org+pnpm@6.31.0/node_modules/pnpm/dist/pnpm.cjs:43206:32)\n    at /home/tomche/.nvm/versions/node/v14.18.2/pnpm-global/5/node_modules/.pnpm/registry.npmjs.org+pnpm@6.31.0/node_modules/pnpm/dist/pnpm.cjs:178093:39"
+    }
   }
 }
