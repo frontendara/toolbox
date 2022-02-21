@@ -1,9 +1,9 @@
 // TODO: if it's needed here or should be a peer dependency
-import 'reflect-metadata';
-import SimpleSchema, { AutoValueContext, SchemaDefinition } from 'simpl-schema';
+import "reflect-metadata";
+import SimpleSchema, { AutoValueContext, SchemaDefinition } from "simpl-schema";
 
-export const SimpleSchemaSymbol = Symbol('SimpleSchema');
-export const METADATA_TYPE_KEY = 'design:type';
+export const SimpleSchemaSymbol = Symbol("SimpleSchema");
+export const METADATA_TYPE_KEY = "design:type";
 
 // TODO: define happy path for mixings
 
@@ -15,7 +15,7 @@ export interface PropertyAnnotation {
 // "design:type"
 // "design:paramtypes"
 // "design:returntype"
-type ValidationOptions = Parameters<SimpleSchema['validator']>[0];
+type ValidationOptions = Parameters<SimpleSchema["validator"]>[0];
 export function getValidator(entity: any, options?: ValidationOptions) {
   return new SimpleSchema(entity[SimpleSchemaSymbol]).validator(options);
 }
@@ -25,7 +25,7 @@ export function getSchema(entity: any) {
 }
 
 function deriveBaseSchema(target: any): any {
-  if (target && typeof target === 'object') {
+  if (target && typeof target === "object") {
     const prototype = Object.getPrototypeOf(target);
     if (prototype) {
       return {
@@ -40,7 +40,7 @@ function deriveBaseSchema(target: any): any {
 }
 
 function ensureSimpleSchemaSymbol<T = { [SimpleSchemaSymbol]?: any }>(
-  target: T,
+  target: T
 ): T & { [SimpleSchemaSymbol]: any } {
   if (!Object.prototype.hasOwnProperty.call(target, SimpleSchemaSymbol)) {
     Object.defineProperty(target, SimpleSchemaSymbol, {
@@ -64,11 +64,11 @@ export function validate({
     let schemaType = Reflect.getMetadata(
       METADATA_TYPE_KEY,
       target,
-      propertyKey,
+      propertyKey
     );
 
     if (
-      typeof schemaType === 'function' &&
+      typeof schemaType === "function" &&
       ![String, Number, Boolean, Array].includes(schemaType)
     ) {
       schemaType = getSchema(new schemaType());
@@ -84,7 +84,7 @@ export function validate({
     // TODO: need to add check if members is not a decorated class, but a constructor for primitive
     // TODO: if primiteve value constructor, how to add things like `min`?
     if (members && schemaType === Array) {
-      const memberSchemaDefinition = Object.hasOwnProperty.call(members, 'type')
+      const memberSchemaDefinition = Object.hasOwnProperty.call(members, "type")
         ? members
         : new SimpleSchema(new members()[SimpleSchemaSymbol]);
       target[SimpleSchemaSymbol][`${String(propertyKey)}.$`] =
@@ -108,24 +108,24 @@ export function oneOf(...types: any[]) {
 // https://github.com/aldeed/simpl-schema/blob/main/package/lib/SimpleSchema.js#L24-L37
 const oneOfProps = [
   // 'type',
-  'min',
-  'max',
-  'minCount',
-  'maxCount',
-  'allowedValues',
-  'exclusiveMin',
-  'exclusiveMax',
-  'regEx',
-  'custom',
-  'blackbox',
-  'trim',
+  "min",
+  "max",
+  "minCount",
+  "maxCount",
+  "allowedValues",
+  "exclusiveMin",
+  "exclusiveMax",
+  "regEx",
+  "custom",
+  "blackbox",
+  "trim",
 ];
 
 function createConstraint(options) {
   return function <T>(
     target: any,
     prop: string,
-    descriptor: TypedPropertyDescriptor<T>,
+    descriptor: TypedPropertyDescriptor<T>
   ) {
     validate(options)(target, prop);
     return descriptor;
@@ -135,6 +135,10 @@ function createConstraint(options) {
 // NOTE: creating and exporting manually to allow them to be treeshakeable
 export function Integer(): any {
   return createConstraint({ type: SimpleSchema.Integer });
+}
+
+export function Id(): any {
+  return createConstraint({ type: String, regEx: SimpleSchema.RegEx.Id });
 }
 
 export function min(min: number): any {
@@ -170,7 +174,7 @@ export function optional(optional = true): any {
   return createConstraint({ constraints: { optional } });
 }
 
-type Validator = NonNullable<SchemaDefinition['custom']>;
+type Validator = NonNullable<SchemaDefinition["custom"]>;
 interface ValidatorWithContextArgs {
   (ctx: ThisParameterType<Validator>): ReturnType<Validator>;
 }

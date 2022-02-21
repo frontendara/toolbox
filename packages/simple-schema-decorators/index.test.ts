@@ -15,8 +15,6 @@ import {
   defaultValue,
   constant,
   max,
-  getSchema,
-  SimpleSchemaSymbol,
 } from ".";
 
 const StockType = {

@@ -15,8 +15,5 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "skipLibCheck": true
-  },
-  "include": [
-    "index.ts"
-  ]
+  }
 }
