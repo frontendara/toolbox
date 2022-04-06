@@ -1,10 +1,10 @@
 {
   "name": "@frontendara/pin-from-lockfile",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Read current versions in lockfile and pin package json to it",
-  "main": "index.mjs",
+  "main": "index.js",
   "type": "module",
   "author": "Tomas Chmelevskij <labas@frontendara.com> (https://www.frontendara.com/)",
   "license": "MIT",
-  "bin": "./index.mjs"
+  "bin": "./index.js"
 }

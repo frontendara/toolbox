@@ -1,4 +1,4 @@
-import { readFile, writeFile } from "fs/promises";
+const { readFile, writeFile } = require("fs/promises");
 
 const pkg = JSON.parse(await readFile("package.json", "utf8"));
 const pkgLock = JSON.parse(await readFile("package-lock.json", "utf8"));
