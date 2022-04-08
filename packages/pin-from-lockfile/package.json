@@ -1,5 +1,5 @@
 {
-  "name": "@frontendara/pin-from-lockfile",
+  "name": "@frdr/pin-from-lockfile",
   "version": "1.0.1",
   "description": "Read current versions in lockfile and pin package json to it",
   "main": "index.js",
