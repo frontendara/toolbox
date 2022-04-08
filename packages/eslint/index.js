@@ -1,4 +1,3 @@
-// TODO: think about splitting this up for meteor and non meteor projects
 module.exports = {
   parserOptions: {
     sourceType: "module",
@@ -10,26 +9,18 @@ module.exports = {
   ignorePatterns: ["bin/"],
 
   settings: {
-    "import/resolver": {
-      meteor: {
-        extensions: [".js", ".ts", ".jsx", ".tsx"],
-        moduleDirectory: ["node_modules", "imports"],
-      },
-    },
     react: {
       version: "detect",
     },
   },
   parser: "@typescript-eslint/parser",
   plugins: [
-    "meteor",
     "@typescript-eslint",
     "no-only-tests",
     "testing-library",
     "jsx-a11y",
   ],
   extends: [
-    "plugin:meteor/recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier",
     "plugin:import/recommended",
@@ -52,29 +43,5 @@ module.exports = {
     "react/react-in-jsx-scope": "off",
     "no-return-await": "error",
     "arrow-parens": ["error", "always"],
-    "import/order": [
-      "error",
-      {
-        groups: [
-          "builtin",
-          "internal",
-          "external",
-          "parent",
-          "sibling",
-          "index",
-        ],
-        pathGroups: [
-          {
-            pattern: "^meteor/**",
-            group: "internal",
-          },
-        ],
-        "newlines-between": "always",
-        alphabetize: {
-          order: "asc",
-          caseInsensitive: true,
-        },
-      },
-    ],
   },
 };
