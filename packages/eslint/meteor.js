@@ -15,7 +15,7 @@ module.exports = {
   },
   parser: "@typescript-eslint/parser",
   plugins: ["meteor"],
-  extends: [ "plugin:meteor/recommended"],
+  extends: [ "@meteorjs/eslint-config-meteor"],
   rules: {
     "import/order": [
       "error",

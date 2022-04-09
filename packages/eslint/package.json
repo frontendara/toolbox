@@ -12,7 +12,6 @@
     "@typescript-eslint/parser": "^4.28.3",
     "eslint": "^7.31.0",
     "eslint-config-prettier": "^6.11.0",
-    "eslint-import-resolver-meteor": "^0.4.0",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-meteor": "^7.3.0",
@@ -29,5 +28,16 @@
   "bugs": {
     "url": "https://github.com/frontendara/toolbox/issues"
   },
-  "homepage": "https://github.com/frontendara/toolbox/packages/eslint-config#readme"
+  "homepage": "https://github.com/frontendara/toolbox/packages/eslint-config#readme",
+  "devDependencies": {
+    "@meteorjs/eslint-config-meteor": "^1.0.5",
+    "babel-eslint": "^10.1.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-import-resolver-meteor": "^0.4.0",
+    "typescript": "^4.6.3"
+  },
+  "peerDependencies": {
+    "eslint-config-airbnb": "^19.0.4",
+    "typescript": "^4.6.3"
+  }
 }
