@@ -22,11 +22,11 @@ module.exports = {
   ],
   extends: [
     "plugin:@typescript-eslint/recommended",
-    "prettier",
     "plugin:import/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
+    "prettier",
   ],
   rules: {
     "no-only-tests/no-only-tests": "error",
