@@ -3,7 +3,6 @@
   "version": "1.0.1",
   "description": "Read current versions in lockfile and pin package json to it",
   "main": "index.js",
-  "type": "module",
   "author": "Tomas Chmelevskij <labas@frontendara.com> (https://www.frontendara.com/)",
   "license": "MIT",
   "bin": "./index.js"
